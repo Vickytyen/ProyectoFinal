@@ -1,0 +1,75 @@
+<!--Alumna: Victoria Yen
+	Idea: Pagina web comercial dedicada a los amantes de los gatos
+	Curso: Desarrollo web 
+	Profesor: Dario Ceballos
+	Tutora: Vanina Ragalli
+	Entrega: N13
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Inicio SEO -->
+	<!-- Keywords -->
+	<meta name="keywords" content="gatos, gatitos, diseño, indumentaria, adopcion responsable">
+	<!-- Titulo -->
+	<title>Contactanos/Suscripcion</title>
+	<!-- Desccripcion -->
+	<meta name="description" content="Formulario de contacto y opcion de suscripcion">
+	<!-- Desafio complementario SEO -->
+	<meta name="author" content="Victoria Yen" />
+	<meta name="copyright" content="Victoria Yen 2021" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta name="format-detection" content="telephone=yes" />
+	<meta name="HandheldFriendly" content="true" />
+	<meta name=”twitter:title” content="Amamos los gatos">
+	<meta name=”twitter:description”
+	content="Esta pagina esta dedicada al amor humano y apreciacion hacia los gatos en todas sus formas. Encontraras secciones con productos, articulos de interes, merchandising de y para gatos">
+	<meta name=”twitter:image” content="img/catlatic.jpg">
+	<meta name=”twitter:site” content="@miusuario">
+	<meta name=”twitter:creator” content="@miusuario">
+	<!-- Fin SEO -->
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Staatliches&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../estilos.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+	<section>
+		<h2>Contactanos</h2>  
+		<form class="form">
+			<label for="nombre">Nombre:<input type="text" name="nombre" placeholder="Nombre" required></label><br>
+			<label for="apellido">Apellido:<input type="text" name="apellido" placeholder="Apellido" required></label><br>
+			<label for="nombre">Email:<input type="text" name="email" placeholder="Email" required></label><br>
+			<label for="pais">De que pais sos?</label><br>
+			<select id="pais" name="pais">
+				<option value="1">Argentina</option>
+				<option value="2">Chile</option>
+				<option value="3">Colombia</option>
+				<option value="4">Ecuador</option>
+				<option value="5">Mexico</option>
+				<option value="4">Peru</option>
+				<option value="6">Venezuela</option>
+				<option value="7">Uruguay</option>
+			</select><br>
+			<strong>Conoces nuestro espacio?</strong><br>
+			<label for="cliente_si">si</label>
+			<input type="radio" name="cliente" id="cliente_si" checked>
+			<label for="cliente_no">no</label>
+			<input type="radio" name="cliente" id="cliente_no"><br>
+			<label for="suscripcion">Suscribite a nuestra web</label>
+			<input type="checkbox" name="suscripcion" id="suscripcion"><br>
+			<label>Dejanos tu comentario</label><br>
+			<textarea name="comentario" id="" cols="30" rows="10"></textarea><br>
+			<input class="btn btn-primary" type="submit" value="Submit">
+			<input class="btn btn-primary" type="reset" value="Reset">
+		</form>
+	</section>
+	<a href="../index.html"><button class="boton">Volver</button></a>	
+</body>
+</html>
