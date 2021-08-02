@@ -452,6 +452,11 @@ ul.li {
 	margin-left: 30%;
 }
 
+/*Maps+each*/
+
+
+
+
 /*Movil*/
 
 @media (min-width: 280px) and (max-width: 640px) {
@@ -485,10 +490,7 @@ ul.li {
 	#menuGrid {
 		grid-area: menuGrid;
 	}
-	body {
-		background-image: url("img/fondoStars.jpg");
-		background-repeat: repeat;
-	}
+	
 	.header__menu__lista {
 		display: flex;
 		flex-direction: column;
