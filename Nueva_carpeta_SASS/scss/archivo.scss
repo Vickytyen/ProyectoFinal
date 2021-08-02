@@ -193,7 +193,16 @@ li {
 .staatliches {
 	font-family: staatliches;
 	color: greenyellow;
-	margin-left: 5%;
+	background-color: rgb(150, 86, 211);
+	height:40%;
+	width: 70%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 15%;
+	text-align: center;
+	font-size: 4 rem;
+	
+	
 }
 .italica {
 	font-style: italic;
@@ -340,6 +349,30 @@ h2 {
 	justify-content: space-evenly;
 	align-items: center;
 }
+
+
+@-webkit-keyframes color-change-2x {
+	0% {
+		background: #19dcea;
+	}
+	100% {
+		background: #b22cff;
+	}
+}
+@keyframes color-change-2x {
+	0% {
+		background: #19dcea;
+	}
+	100% {
+		background: #b22cff;
+	}
+}
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	animation: color-change-2x 2s linear infinite alternate both;
+}
+
+
 
 
 /*CSS en Destacados*/
