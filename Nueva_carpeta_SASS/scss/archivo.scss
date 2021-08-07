@@ -118,10 +118,11 @@ img {
 	display: flex;
 }
 .navIcon {
+	text-align: center;
 	li {
 		img {
-			width: 50px;
-			height: 50px;
+			max-width: 50px;
+			max-height: 50px;
 			border-radius: 100%;
 		}
 	}
@@ -137,6 +138,7 @@ nav {
 	}
 }
 .contenedorMenu {
+	grid-area: menu;
 	text-align: center;
 
 	a {
@@ -264,13 +266,17 @@ strong {
 ul {
 	font-size: 2 rem;
 	color: white;
+	padding: 0;
 }
-.boton {
-	margin-left: 50%;
-	padding: 5px;
-	font-size: 20px;
-	font-family: staatliches;
-	color: hotpink;
+.ver-mas {
+	padding: 1em 0;
+	text-align: center;
+	.boton {
+		padding: 5px;
+		font-size: 20px;
+		font-family: staatliches;
+		color: hotpink;
+	}
 }
 .inicioFlex {
 	display: flex;
@@ -357,9 +363,6 @@ h2 {
 	animation: color-change-2x 2s linear infinite alternate both;
 }
 
-
-
-
 /*CSS en Destacados*/
 
 .destacadosFlex {
@@ -407,14 +410,6 @@ tr {
 		color: mediumpurple;
 	}
 }
-ul.li {
-	font-family: staatliches;
-	background-color: white;
-	width: 30%;
-	height: 30%;
-	color: fuchsia;
-	opacity: 70%;
-}
 
 
 /* CSS en seccion formulario */
@@ -431,182 +426,6 @@ ul.li {
 
 /*Maps+each*/
 
-
-
-
-/*Movil*/
-
-@media (min-width: 280px) and (max-width: 640px) {
-	html {
-		font-size: 13px;
-	}
-	.header {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas: "logo" "nav" "menuGrid";
-		max-width: 100%;
-	}
-	#nav {
-		grid-area: nav;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		nav {
-			img {
-				margin-left: 50%;
-				padding: 10%;
-			}
-		}
-	}
-	#logo {
-		grid-area: logo;
-		img {
-			margin-left: 10%;
-		}
-	}
-	#menuGrid {
-		grid-area: menuGrid;
-	}
-	
-	.header__menu__lista {
-		display: flex;
-		flex-direction: column;
-		margin: auto;
-		max-width: 40%;
-		padding: 2%;
-		li {
-			margin-top: 2%;
-		}
-	}
-	.search {
-		margin-right: 10%;
-	}
-	h1 {
-		font-size: 30px;
-	}
-	.textoFlex {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		div {
-			width: 100%;
-		}
-	}
-	#parrafo {
-		color: white;
-		font-family: Pacifico;
-		overflow-y: scroll;
-		width: 90%;
-		height: 50%;
-		p {
-			font-size: 0.7rem;
-		}
-	}
-	strong {
-		font-size: 1rem;
-	}
-	.footer {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		padding: 5%;
-	}
-}
-
-/*Tablet */
-
-@media (min-width: 641px) and (max-width: 780px) {
-	.header {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-areas: "logo" "nav" "menuGrid";
-		max-width: 100%;
-	}
-	#nav {
-		grid-area: nav;
-		display: flex;
-		align-items: center;
-		nav {
-			img {
-				margin-right: 20%;
-				padding: 10%;
-			}
-		}
-	}
-	#logo {
-		grid-area: logo;
-		img {
-			margin-left: 35%;
-			margin-bottom: 3%;
-		}
-	}
-	#menuGrid {
-		grid-area: menuGrid;
-	}
-	.header__menu__lista {
-		display: flex;
-		justify-content: center;
-		margin: auto;
-		max-width: 40%;
-		li {
-			margin: 2%;
-			padding: 2%;
-		}
-	}
-	.search {
-		margin-right: 10%;
-	}
-	.textoFlex {
-		background-color: violet;
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		div {
-			width: 100%;
-		}
-	}
-	#parrafo {
-		color: white;
-		font-family: Pacifico;
-		font-size: 1.5rem;
-		overflow-y: scroll;
-		width: 90%;
-		height: 50%;
-	}
-}
-
-/*Desktop*/
-
-@media (min-width: 781px) {
-	.header {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: "none logo logo nav" "menu menu menu menu";
-	}
-	#logo {
-		grid-area: logo;
-		align-content: center;
-	}
-	#nav {
-		grid-area: nav;
-	}
-	#menuGrid {
-		grid-area: menu;
-	}
-	.header__menu__lista {
-		li {
-			background-color: hotpink;
-			padding: 2%;
-			margin: 2%;
-			a {
-				text-decoration: none;
-			}
-		}
-	}
-}
 .footerRedes {
 	a {
 		img {
@@ -623,8 +442,6 @@ ul.li {
 //ejemplo BEM
 .header {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas: "none logo logo nav" "menu menu menu menu";
 }
 
 .header__logo {
@@ -677,4 +494,164 @@ ul.li {
 .footer__link {
 	width: 40px;
 	height: 40px;
+}
+
+/*Movil*/
+
+@media (max-width: 640px) {
+	html {
+		font-size: 13px;
+	}
+	.header {
+		display: grid;
+		grid-template-areas: "logo menu" "nav nav";
+		max-width: 100%;
+		align-items: center;
+		grid-row-gap: 5%;
+		margin-bottom: 5%;
+	}
+	#nav {
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		nav {
+			width: 40%;
+			.navIcon li img {
+				padding: 10%;
+				max-width: 40px;
+			}
+		}
+
+		.search {
+			flex-direction: column;
+		}
+	}
+	#logo {
+		img {
+			margin: 0;
+		}
+	}
+	
+	.header__menu__lista {		
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		li {
+			margin-top: 2%;
+		}
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+	.textoFlex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		div {
+			width: 100%;
+		}
+	}
+	#parrafo {
+		color: white;
+		font-family: Pacifico;
+		overflow-y: scroll;
+		width: 90%;
+		height: 50%;
+		p {
+			font-size: 0.7rem;
+		}
+	}
+	strong {
+		font-size: 1rem;
+	}
+	.footer {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 5%;
+	}
+}
+
+/*Tablet */
+
+@media (min-width: 641px) and (max-width: 780px) {
+	.header {
+		display: grid;
+		grid-template-areas: "logo" "nav" "menu";
+		max-width: 100%;
+	}
+	#nav {
+		display: flex;
+		align-items: center;
+		nav {
+			img {
+				margin-right: 20%;
+				padding: 10%;
+			}
+		}
+	}
+	#logo {
+		img {
+			margin-left: 35%;
+			margin-bottom: 3%;
+		}
+	}
+	.header__menu__lista {
+		display: flex;
+		justify-content: center;
+		margin: auto;
+		max-width: 40%;
+		li {
+			margin: 2%;
+			padding: 2%;
+		}
+	}
+
+	.textoFlex {
+		background-color: violet;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		div {
+			width: 100%;
+		}
+	}
+	#parrafo {
+		color: white;
+		font-family: Pacifico;
+		font-size: 1.5rem;
+		overflow-y: scroll;
+		width: 90%;
+		height: 50%;
+	}
+}
+
+/*Desktop*/
+
+@media (min-width: 781px) {
+	.header {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "none logo logo nav" "menu menu menu menu";
+	}
+	#logo {
+		align-content: center;
+	}
+
+	.header__menu__lista {
+		li {
+			background-color: hotpink;
+			padding: 2%;
+			margin: 2%;
+			a {
+				text-decoration: none;
+			}
+		}
+	}
 }
