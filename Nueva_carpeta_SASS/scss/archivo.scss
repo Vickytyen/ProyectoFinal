@@ -148,12 +148,11 @@ nav {
 }
 .contenedorMenu {
 	text-align: center;
-}
-li {
+
 	a {
+		padding: 20px;
 		&:hover {
 			background-color: rgb(202, 151, 218);
-			padding: 20px;
 		}
 	}
 }
