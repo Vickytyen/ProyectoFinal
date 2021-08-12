@@ -10,7 +10,7 @@
 
 /*CSS index*/
 /*ANIMACION*/
-$primary-color:rgb(168, 41, 168);
+$primary-color:rgb(194, 110, 233);
 $font-color-secondary:ghostwhite;
 @-webkit-keyframes latido {
 	from {
@@ -95,8 +95,8 @@ $font-color-secondary:ghostwhite;
 	animation: latido 1.5s ease-in-out infinite both;
 }
 body {
-	background-image: url("../../img/fondoStars.jpg");
-	background-repeat: round;
+	background-image: url("../../img/space.jpg");
+	background-size: contain;
 	font-family: arial, sans-serif;
 	color: gold;
 	padding: 20px;
@@ -132,8 +132,10 @@ nav {
 		display: inline-block;
 		a {
 			text-transform: uppercase;
-			color: aquamarine;
-			font-style: bold;
+			font-family: staatliches;
+			color: rgb(181, 255, 230);
+			font-size: 2.2rem;
+			
 		}
 	}
 }
@@ -183,7 +185,7 @@ nav {
 
 .staatliches {
 	font-family: staatliches;
-	color: greenyellow;
+	color: rgb(235, 245, 102);
 	background-color: rgb(150, 86, 211);
 	height:40%;
 	width: 70%;
@@ -243,14 +245,13 @@ div {
 
 #parrafo {
 	color: white;
-	font-family: Pacifico;
+	font-family: staatliches;
 	font-size: 1.5rem;
 	overflow-y: scroll;
 	height: 40vh;
 }
 .textoFlex {
-	background: rgb(28,0,36);
-	background: linear-gradient(123deg, rgba(28,0,36,1) 0%, rgba(121,9,118,1) 60%, rgba(102,0,255,1) 100%);
+	background: rgb(225, 150, 255);
 	display: flex;
 	align-items: center;
 	margin-bottom: 10px;
@@ -307,7 +308,7 @@ footer {
 	}
 }
 #copyRight {
-	background-color: blueviolet;
+	background-color: rgb(181, 107, 250);
 	text-align: center;
 	text-decoration: none;
 	list-style: none;
@@ -344,18 +345,18 @@ h2 {
 
 @-webkit-keyframes color-change-2x {
 	0% {
-		background: #19dcea;
+		background: #b1faff;
 	}
 	100% {
-		background: #b22cff;
+		background: #dca1ff;
 	}
 }
 @keyframes color-change-2x {
 	0% {
-		background: #19dcea;
+		background: #80f7ff;
 	}
 	100% {
-		background: #b22cff;
+		background: #ec9fff;
 	}
 }
 .color-change-2x {
@@ -388,6 +389,17 @@ h2 {
 	height: 100%;
 	padding: 5%;
 	margin: 10px;
+
+}
+
+#contenedorNovedades2 {
+	background-color: mediumslateblue;
+	font-size: 1.5rem;
+	word-spacing: 5px;
+	width: 80%;
+	height: 100%;
+	padding: 5%;
+	margin: 10px;
 }
 .h1Secciones {
 	-webkit-text-stroke-color: rgb(85, 61, 221);
@@ -396,26 +408,11 @@ h2 {
 	font-size: 3.5rem;
 }
 
-/*CSS tabla*/
-
-.thead {
-	background-color: aquamarine;
-	color: fuchsia;
-	font-style: bold;
-	margin-left: 40%;
-}
-tr {
-	td {
-		background-color: white;
-		color: mediumpurple;
-	}
-}
-
 
 /* CSS en seccion formulario */
 
 .form {
-	background-color: rgb(79, 25, 116);
+	background-color: rgb(191, 109, 247);
 	text-align: center;
 	margin: 10px;
 	padding: 10px;
@@ -423,8 +420,6 @@ tr {
 	height: 40%;
 	margin-left: 30%;
 }
-
-/*Maps+each*/
 
 .footerRedes {
 	a {
@@ -450,50 +445,6 @@ tr {
 	}
 	grid-area: logo;
 	align-content: left;
-}
-// implementado en HTML hasta este punto
-.menu__link {
-	text-decoration: none;
-	text-transform: uppercase;
-	color: $font-color-secondary;
-}
-.menu__link--active {
-	text-decoration: underline;
-	text-transform: uppercase;
-	color: $font-color-secondary;
-}
-.multimedia {
-	background: $primary-color;
-	display: flex;
-	align-items: center;
-	margin-bottom: 10px;
-}
-.multimedia__parrafo {
-	color: $font-color-secondary;
-	font-family: Pacifico;
-	font-size: 1.5rem;
-	overflow-y: scroll;
-	height: 40vh;
-}
-.footer {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 5%;
-}
-.footer__contacto {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
-.footer__redes {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-.footer__link {
-	width: 40px;
-	height: 40px;
 }
 
 /*Movil*/
@@ -521,6 +472,8 @@ tr {
 				max-width: 40px;
 			}
 		}
+	
+	
 
 		.search {
 			flex-direction: column;
@@ -556,7 +509,7 @@ tr {
 	}
 	#parrafo {
 		color: white;
-		font-family: Pacifico;
+		font-family: staatliches;
 		overflow-y: scroll;
 		width: 90%;
 		height: 50%;
@@ -573,7 +526,21 @@ tr {
 		align-items: center;
 		padding: 5%;
 	}
+	nav {
+	li {
+		display: inline-block;
+		a {
+			text-transform: uppercase;
+			font-family: staatliches;
+			color: rgb(166, 128, 255);
+			font-size: 2.2rem;
+			
+		}
+	}
 }
+}
+
+
 
 /*Tablet */
 
@@ -646,11 +613,11 @@ tr {
 
 	.header__menu__lista {
 		li {
-			background-color: hotpink;
-			padding: 2%;
-			margin: 2%;
+			background-color: rgb(255, 170, 255);
+			margin: 1%;
 			a {
 				text-decoration: none;
+				
 			}
 		}
 	}

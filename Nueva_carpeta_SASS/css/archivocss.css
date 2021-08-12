@@ -79,8 +79,8 @@
   animation: latido 1.5s ease-in-out infinite both; }
 
 body {
-  background-image: url("../../img/fondoStars.jpg");
-  background-repeat: round;
+  background-image: url("../../img/space.jpg");
+  background-size: contain;
   font-family: arial, sans-serif;
   color: gold;
   padding: 20px; }
@@ -109,8 +109,9 @@ nav li {
   display: inline-block; }
   nav li a {
     text-transform: uppercase;
-    color: aquamarine;
-    font-style: bold; }
+    font-family: staatliches;
+    color: #b5ffe6;
+    font-size: 2.2rem; }
 
 .contenedorMenu {
   grid-area: menu;
@@ -145,7 +146,7 @@ nav li {
 /*Fin del menu con submenu*/
 .staatliches {
   font-family: staatliches;
-  color: greenyellow;
+  color: #ebf566;
   background-color: #9656d3;
   height: 40%;
   width: 70%;
@@ -191,14 +192,13 @@ div img:hover {
 /*Seccion Multimedia*/
 #parrafo {
   color: white;
-  font-family: Pacifico;
+  font-family: staatliches;
   font-size: 1.5rem;
   overflow-y: scroll;
   height: 40vh; }
 
 .textoFlex {
-  background: #1c0024;
-  background: linear-gradient(123deg, #1c0024 0%, #790976 60%, #6600ff 100%);
+  background: #e196ff;
   display: flex;
   align-items: center;
   margin-bottom: 10px; }
@@ -248,7 +248,7 @@ footer .contacto {
   justify-content: space-evenly; }
 
 #copyRight {
-  background-color: blueviolet;
+  background-color: #b56bfa;
   text-align: center;
   text-decoration: none;
   list-style: none;
@@ -276,15 +276,15 @@ h2 {
 
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #19dcea; }
+    background: #b1faff; }
   100% {
-    background: #b22cff; } }
+    background: #dca1ff; } }
 
 @keyframes color-change-2x {
   0% {
-    background: #19dcea; }
+    background: #80f7ff; }
   100% {
-    background: #b22cff; } }
+    background: #ec9fff; } }
 
 .color-change-2x {
   -webkit-animation: color-change-2x 2s linear infinite alternate both;
@@ -313,26 +313,24 @@ h2 {
   padding: 5%;
   margin: 10px; }
 
+#contenedorNovedades2 {
+  background-color: mediumslateblue;
+  font-size: 1.5rem;
+  word-spacing: 5px;
+  width: 80%;
+  height: 100%;
+  padding: 5%;
+  margin: 10px; }
+
 .h1Secciones {
   -webkit-text-stroke-color: #553ddd;
   -webkit-text-stroke-width: 0.05rem;
   font-family: staatliches;
   font-size: 3.5rem; }
 
-/*CSS tabla*/
-.thead {
-  background-color: aquamarine;
-  color: fuchsia;
-  font-style: bold;
-  margin-left: 40%; }
-
-tr td {
-  background-color: white;
-  color: mediumpurple; }
-
 /* CSS en seccion formulario */
 .form {
-  background-color: #4f1974;
+  background-color: #bf6df7;
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -340,7 +338,6 @@ tr td {
   height: 40%;
   margin-left: 30%; }
 
-/*Maps+each*/
 .footerRedes {
   display: flex;
   flex-direction: row;
@@ -357,49 +354,6 @@ tr td {
   align-content: left; }
   .header__logo img {
     border-radius: 100%; }
-
-.menu__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: ghostwhite; }
-
-.menu__link--active {
-  text-decoration: underline;
-  text-transform: uppercase;
-  color: ghostwhite; }
-
-.multimedia {
-  background: #a829a8;
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px; }
-
-.multimedia__parrafo {
-  color: ghostwhite;
-  font-family: Pacifico;
-  font-size: 1.5rem;
-  overflow-y: scroll;
-  height: 40vh; }
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5%; }
-
-.footer__contacto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly; }
-
-.footer__redes {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-
-.footer__link {
-  width: 40px;
-  height: 40px; }
 
 /*Movil*/
 @media (max-width: 640px) {
@@ -443,7 +397,7 @@ tr td {
       width: 100%; }
   #parrafo {
     color: white;
-    font-family: Pacifico;
+    font-family: staatliches;
     overflow-y: scroll;
     width: 90%;
     height: 50%; }
@@ -455,7 +409,14 @@ tr td {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 5%; } }
+    padding: 5%; }
+  nav li {
+    display: inline-block; }
+    nav li a {
+      text-transform: uppercase;
+      font-family: staatliches;
+      color: #a680ff;
+      font-size: 2.2rem; } }
 
 /*Tablet */
 @media (min-width: 641px) and (max-width: 780px) {
@@ -507,8 +468,7 @@ tr td {
   #logo {
     align-content: center; }
   .header__menu__lista li {
-    background-color: hotpink;
-    padding: 2%;
-    margin: 2%; }
+    background-color: #ffaaff;
+    margin: 1%; }
     .header__menu__lista li a {
       text-decoration: none; } }
