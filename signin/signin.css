@@ -8,7 +8,7 @@ Entrega: N9
 */
 
 
-.bodySignin {
+#bodySignin {
   display: flex;
   align-items: center;
   padding-top: 40px;
@@ -27,10 +27,6 @@ Entrega: N9
   font-weight: 400;
 }
 
-.form-signin .form-floating:focus-within {
-  z-index: 2;
-}
-
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
@@ -46,7 +42,7 @@ Entrega: N9
 }
 
 /*CSS PROPIO*/
-#bodyBackground {
+.bodyBackground {
   background-image: url("../img/monocat.jpg");
 }
 #mainSignin {
