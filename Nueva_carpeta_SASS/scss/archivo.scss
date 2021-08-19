@@ -266,8 +266,9 @@ strong {
 }
 ul {
 	font-size: 2 rem;
-	color: white;
+	color: rgb(125, 50, 223);
 	padding: 0;
+	list-style: none;
 }
 .ver-mas {
 	padding: 1em 0;
@@ -345,7 +346,7 @@ h2 {
 
 @-webkit-keyframes color-change-2x {
 	0% {
-		background: #b1faff;
+		background: #b4e3ff;
 	}
 	100% {
 		background: #dca1ff;
@@ -353,7 +354,7 @@ h2 {
 }
 @keyframes color-change-2x {
 	0% {
-		background: #80f7ff;
+		background: #4eeaff;
 	}
 	100% {
 		background: #ec9fff;
