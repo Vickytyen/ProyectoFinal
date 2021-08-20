@@ -186,7 +186,7 @@ h1 {
   align-content: space-between; }
 
 /*TRANFORMACION*/
-div img:hover {
+.scale div img:hover {
   transform: scale(1.2); }
 
 /*Seccion Multimedia*/
