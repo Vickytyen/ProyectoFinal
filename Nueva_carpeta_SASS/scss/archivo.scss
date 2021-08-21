@@ -88,7 +88,7 @@ $font-color-secondary:ghostwhite;
 	box-sizing: border-box;
 }
 .logoSeccion {
-	margin-left: 40%;
+	margin-left: 45%;
 }
 .latido {
 	-webkit-animation: latido 1.5s ease-in-out infinite both;
@@ -188,14 +188,12 @@ nav {
 	color: rgb(235, 245, 102);
 	background-color: rgb(150, 86, 211);
 	height:40%;
-	width: 70%;
+	width: 80%;
 	margin-top: 2%;
 	margin-bottom: 2%;
-	margin-left: 15%;
+	margin-left: 10%;
 	text-align: center;
-	font-size: 4 rem;
-	
-	
+	font-size: 4 rem;	
 }
 .italica {
 	font-style: italic;
@@ -254,7 +252,8 @@ h1 {
 	background: rgb(225, 150, 255);
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
+	margin: 2% 10% 2% 10%;
+
 	div {
 		width: 50%;
 		height: 40vh;
@@ -301,6 +300,8 @@ ul {
 	flex-direction: row;
 	align-items: center;
 }
+
+
 footer {
 	.contacto {
 		display: flex;
@@ -326,12 +327,13 @@ footer {
 
 h2 {
 	background-color: rgb(150, 86, 211);
-	height: 40%;
-	margin-top: 5% ;
-	margin-bottom: 5% ;
+	width: 80%;
+
+	margin: 5% 5%;
+	margin-left: 10% ;
 	text-align: center;
 	font-size: 2.5rem;
-	font-family: Pacifico;
+	font-family: staatliches;
 }
 
 /*CSS en seccion productos*/
@@ -383,24 +385,45 @@ h2 {
 	max-width: 100%;
 }
 #contenedorNovedades {
-	background-color: mediumslateblue;
+	background-color: rgb(142, 124, 243);
 	font-size: 1.5rem;
 	word-spacing: 5px;
 	width: 80%;
 	height: 100%;
 	padding: 5%;
-	margin: 10px;
+	margin-left: 10%;
+
+}
+
+#contenedorNovedadesI {
+	background-color: rgb(167, 116, 233);
+	font-size: 1.5rem;
+	word-spacing: 5px;
+	width: 80%;
+	height: 100%;
+	padding: 5%;
+	margin-left: 10%;
+
+}
+#contenedorNovedadesII {
+	background-color: rgb(169, 150, 212);
+	font-size: 1.5rem;
+	word-spacing: 5px;
+	width: 80%;
+	height: 100%;
+	padding: 5%;
+	margin-left: 10%;
 
 }
 
 #contenedorNovedades2 {
-	background-color: mediumslateblue;
+	background-color: rgb(214, 158, 252);
 	font-size: 1.5rem;
 	word-spacing: 5px;
 	width: 80%;
 	height: 100%;
 	padding: 5%;
-	margin: 10px;
+	margin-left: 10%;
 }
 .h1Secciones {
 	-webkit-text-stroke-color: rgb(85, 61, 221);
@@ -422,6 +445,19 @@ h2 {
 	margin-left: 30%;
 }
 
+.staatlichesform {
+	font-family: staatliches;
+	color: rgb(235, 245, 102);
+	background-color: rgb(150, 86, 211);
+	width: 40%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 30%;
+	text-align: center;
+	font-size: 4 rem;
+}	
+
+
 .footerRedes {
 	a {
 		img {
@@ -432,6 +468,7 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	
 }
 
 
@@ -474,8 +511,6 @@ h2 {
 			}
 		}
 	
-	
-
 		.search {
 			flex-direction: column;
 		}
@@ -497,6 +532,18 @@ h2 {
 		}
 	}
 
+	.ver-mas {
+	padding: 1em 0;
+	text-align: center;
+	.boton {
+		padding: 5px;
+		font-size: 20px;
+		font-family: staatliches;
+		color: hotpink;
+		margin-top: 8% ;
+		}
+	}
+
 	h1 {
 		font-size: 30px;
 	}
@@ -515,12 +562,10 @@ h2 {
 		width: 90%;
 		height: 50%;
 		p {
-			font-size: 0.7rem;
+			font-size: 1rem;
 		}
 	}
-	strong {
-		font-size: 1rem;
-	}
+
 	.footer {
 		display: flex;
 		flex-direction: row;
@@ -578,6 +623,18 @@ h2 {
 		}
 	}
 
+	.ver-mas {
+	padding: 1em 0;
+	text-align: center;
+	.boton {
+		padding: 5px;
+		font-size: 20px;
+		font-family: staatliches;
+		color: hotpink;
+		margin-top: 8% ;
+		}
+	}
+
 	.textoFlex {
 		background-color: violet;
 		display: flex;
@@ -592,7 +649,7 @@ h2 {
 	}
 	#parrafo {
 		color: white;
-		font-family: Pacifico;
+		font-family: staatliches;
 		font-size: 1.5rem;
 		overflow-y: scroll;
 		width: 90%;
@@ -620,6 +677,18 @@ h2 {
 				text-decoration: none;
 				
 			}
+		}
+	}
+	
+	.ver-mas {
+	padding: 1em 0;
+	text-align: center;
+	.boton {
+		padding: 5px;
+		font-size: 20px;
+		font-family: staatliches;
+		color: hotpink;
+		margin-top: 3% ;
 		}
 	}
 }

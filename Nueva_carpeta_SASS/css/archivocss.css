@@ -72,7 +72,7 @@
   box-sizing: border-box; }
 
 .logoSeccion {
-  margin-left: 40%; }
+  margin-left: 45%; }
 
 .latido {
   -webkit-animation: latido 1.5s ease-in-out infinite both;
@@ -149,10 +149,10 @@ nav li {
   color: #ebf566;
   background-color: #9656d3;
   height: 40%;
-  width: 70%;
+  width: 80%;
   margin-top: 2%;
   margin-bottom: 2%;
-  margin-left: 15%;
+  margin-left: 10%;
   text-align: center;
   font-size: 4 rem; }
 
@@ -201,7 +201,7 @@ h1 {
   background: #e196ff;
   display: flex;
   align-items: center;
-  margin-bottom: 10px; }
+  margin: 2% 10% 2% 10%; }
   .textoFlex div {
     width: 50%;
     height: 40vh; }
@@ -261,12 +261,12 @@ footer .contacto {
 
 h2 {
   background-color: #9656d3;
-  height: 40%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  width: 80%;
+  margin: 5% 5%;
+  margin-left: 10%;
   text-align: center;
   font-size: 2.5rem;
-  font-family: Pacifico; }
+  font-family: staatliches; }
 
 /*CSS en seccion productos*/
 .productosFlex {
@@ -306,22 +306,40 @@ h2 {
   max-width: 100%; }
 
 #contenedorNovedades {
-  background-color: mediumslateblue;
+  background-color: #8e7cf3;
   font-size: 1.5rem;
   word-spacing: 5px;
   width: 80%;
   height: 100%;
   padding: 5%;
-  margin: 10px; }
+  margin-left: 10%; }
+
+#contenedorNovedadesI {
+  background-color: #a774e9;
+  font-size: 1.5rem;
+  word-spacing: 5px;
+  width: 80%;
+  height: 100%;
+  padding: 5%;
+  margin-left: 10%; }
+
+#contenedorNovedadesII {
+  background-color: #a996d4;
+  font-size: 1.5rem;
+  word-spacing: 5px;
+  width: 80%;
+  height: 100%;
+  padding: 5%;
+  margin-left: 10%; }
 
 #contenedorNovedades2 {
-  background-color: mediumslateblue;
+  background-color: #d69efc;
   font-size: 1.5rem;
   word-spacing: 5px;
   width: 80%;
   height: 100%;
   padding: 5%;
-  margin: 10px; }
+  margin-left: 10%; }
 
 .h1Secciones {
   -webkit-text-stroke-color: #553ddd;
@@ -338,6 +356,17 @@ h2 {
   width: 40%;
   height: 40%;
   margin-left: 30%; }
+
+.staatlichesform {
+  font-family: staatliches;
+  color: #ebf566;
+  background-color: #9656d3;
+  width: 40%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 30%;
+  text-align: center;
+  font-size: 4 rem; }
 
 .footerRedes {
   display: flex;
@@ -388,6 +417,15 @@ h2 {
     text-align: left; }
     .header__menu__lista li {
       margin-top: 2%; }
+  .ver-mas {
+    padding: 1em 0;
+    text-align: center; }
+    .ver-mas .boton {
+      padding: 5px;
+      font-size: 20px;
+      font-family: staatliches;
+      color: hotpink;
+      margin-top: 8%; }
   h1 {
     font-size: 30px; }
   .textoFlex {
@@ -403,9 +441,7 @@ h2 {
     width: 90%;
     height: 50%; }
     #parrafo p {
-      font-size: 0.7rem; }
-  strong {
-    font-size: 1rem; }
+      font-size: 1rem; }
   .footer {
     display: flex;
     flex-direction: row;
@@ -442,6 +478,15 @@ h2 {
     .header__menu__lista li {
       margin: 2%;
       padding: 2%; }
+  .ver-mas {
+    padding: 1em 0;
+    text-align: center; }
+    .ver-mas .boton {
+      padding: 5px;
+      font-size: 20px;
+      font-family: staatliches;
+      color: hotpink;
+      margin-top: 8%; }
   .textoFlex {
     background-color: violet;
     display: flex;
@@ -454,7 +499,7 @@ h2 {
       width: 100%; }
   #parrafo {
     color: white;
-    font-family: Pacifico;
+    font-family: staatliches;
     font-size: 1.5rem;
     overflow-y: scroll;
     width: 90%;
@@ -472,4 +517,13 @@ h2 {
     background-color: #ffaaff;
     margin: 1%; }
     .header__menu__lista li a {
-      text-decoration: none; } }
+      text-decoration: none; }
+  .ver-mas {
+    padding: 1em 0;
+    text-align: center; }
+    .ver-mas .boton {
+      padding: 5px;
+      font-size: 20px;
+      font-family: staatliches;
+      color: hotpink;
+      margin-top: 3%; } }
