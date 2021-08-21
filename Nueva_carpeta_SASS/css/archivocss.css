@@ -79,10 +79,10 @@
   animation: latido 1.5s ease-in-out infinite both; }
 
 body {
-  background-image: url("../../img/space.jpg");
+  background-image: url("../../img/space.webp");
   background-size: contain;
-  font-family: arial, sans-serif;
-  color: gold;
+  font-family: comfortaa, arial, sans-serif;
+  color: #ffeb7c;
   padding: 20px; }
 
 /*Menu con submenu*/
@@ -207,8 +207,11 @@ h1 {
     height: 40vh; }
 
 strong {
-  font-size: 2rem;
-  color: white; }
+  -webkit-text-stroke-color: #ab77ff;
+  -webkit-text-stroke-width: 0.05rem;
+  font-size: 3rem;
+  color: white;
+  font-family: staatliches; }
 
 ul {
   font-size: 2 rem;
@@ -324,7 +327,7 @@ h2 {
   margin-left: 10%; }
 
 #contenedorNovedadesII {
-  background-color: #a996d4;
+  background-color: #da9df7;
   font-size: 1.5rem;
   word-spacing: 5px;
   width: 80%;
@@ -442,6 +445,8 @@ h2 {
     height: 50%; }
     #parrafo p {
       font-size: 1rem; }
+  .overflow {
+    max-width: 80%; }
   .footer {
     display: flex;
     flex-direction: row;
@@ -503,7 +508,9 @@ h2 {
     font-size: 1.5rem;
     overflow-y: scroll;
     width: 90%;
-    height: 50%; } }
+    height: 50%; }
+  .overflow {
+    max-width: 90%; } }
 
 /*Desktop*/
 @media (min-width: 781px) {
