@@ -117,14 +117,14 @@ nav li {
   grid-area: menu;
   text-align: center; }
   .contenedorMenu a {
-    padding: 20px; }
+    padding: 5px; }
     .contenedorMenu a:hover {
       background-color: #ca97da; }
 
 .contenidoDesplegable {
   display: none;
   position: absolute;
-  background-color: #9967af;
+  background-color: #af67af;
   min-width: 160px;
   z-index: 1;
   transition: width 3s; }
@@ -345,14 +345,14 @@ h2 {
   margin-left: 10%; }
 
 .h1Secciones {
-  -webkit-text-stroke-color: #553ddd;
+  -webkit-text-stroke-color: #945ff7;
   -webkit-text-stroke-width: 0.05rem;
   font-family: staatliches;
   font-size: 3.5rem; }
 
 /* CSS en seccion formulario */
 .form {
-  background-color: #bf6df7;
+  background-color: #d79bff;
   text-align: center;
   margin: 10px;
   padding: 10px;
@@ -475,14 +475,11 @@ h2 {
   #logo img {
     margin-left: 35%;
     margin-bottom: 3%; }
-  .header__menu__lista {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    max-width: 40%; }
-    .header__menu__lista li {
-      margin: 2%;
-      padding: 2%; }
+  .header__menu__lista li {
+    background-color: #ffaaff;
+    margin: 1%; }
+    .header__menu__lista li a {
+      text-decoration: none; }
   .ver-mas {
     padding: 1em 0;
     text-align: center; }
